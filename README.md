@@ -56,6 +56,43 @@
 - pip or conda
 - Internet connection (for downloading models)
 
+---
+
+## ⚡ Model Configuration
+The following models are used:
+
+Embedding Model: hkunlp/instructor-xl
+
+LLM for Answer Generation: google/flan-t5-base
+
+##📝 Notes
+🖥️ Running on CPU is supported but may be slower.
+
+⚡ For best performance, run on a machine with GPU acceleration.
+
+📁 Large PDF files may take longer to index; consider chunk size and overlap tuning for optimization.
+
+---
+
+##📄 License
+This project is licensed under the MIT License.
+
+---
+
+##🤝 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
+
+# Create a new branch
+git checkout -b feature/my-feature
+
+# Commit your changes
+git commit -m "Add new feature"
+
+# Push to your fork
+git push origin feature/my-feature
+
+---
+
 ### Installation
 
 ```bash
@@ -65,3 +102,8 @@ cd pdf-chat-pro
 
 # Install required packages
 pip install -r requirements.txt
+```
+
+##Running the App
+
+streamlit run app.py
